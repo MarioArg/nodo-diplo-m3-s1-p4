@@ -4,7 +4,7 @@ const repository = new SuperheroesRepository ();
 
 export function obtenerSuperheroePorId (id){
     const superheroes = repository.obtenerTodos();
-    return superheroes.find (hero.id ===id);
+    return superheroes.find (hero => hero.id ===id);
 }
 
 export function buscarSuperheroesPorAtributo (atributo, valor){
